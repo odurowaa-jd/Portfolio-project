@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio-Project</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">JESSICA|DANIEL.</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Design. Develop. Deliver.</h1>
+      <p>Frontend Developers crafting elegant digital experiences.</p>
+      <a href="#projects" class="btn">View Our Work</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Us.</h2>
+    <p>We create modern, responsive websites with clean design and smooth interactions.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+  </section>
+
+  <!-- PROJECTS -->
+ <section id="projects" class="section">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-container">
+
+    <!-- Project 1 -->
+    <div class="project-card glass-card">
+      <div class="project-image">
+      <img src="images\Screenshot (14).png" alt="Portfolio Project">
+      <div class="overlay"></div>
+    </div>
+
+      <div class="project-content">
+        <h3>Personal Portfolio Website.</h3>
+        <p>
+          A responsive portfolio website built with HTML, CSS, and JavaScript.
+          Features glassmorphism design, smooth animations, and mobile-first responsiveness.
+        </p>
+        <div class="project-buttons">
+  <a href="https://github.com/odurowaa-jd/" 
+     class="project-btn github" 
+     target="_blank" 
+     rel="noopener noreferrer">
+     GitHub
+  </a>
+
+  <a href="https://odurowaa-jd.github.io/Personal-Porfolio-Website./" 
+     class="project-btn live" 
+     target="_blank" 
+     rel="noopener noreferrer">
+     Live Demo
+  </a>
+</div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card glass-card">
+      <div class="project-image">
+      <img src="images\Screenshot (15).png" alt="Youtube.com clone">
+      <div class="overlay"></div>
+    </div>
+
+      <div class="project-content">
+        <h3>Youtube.com Clone</h3>
+        <p>
+          A sleek YouTube-inspired front-end clone showcasing responsive design, clean UI structure, and smooth user interface interactions built with modern web development practices.
+        </p>
+        <div class="project-buttons">
+  <a href="https://github.com/lanredamilare327" 
+     class="project-btn github" 
+     target="_blank" 
+     rel="noopener noreferrer">
+     GitHub
+  </a>
+
+  <a href="https://lanredamilare327.github.io/lanreyoutube/" 
+     class="project-btn live" 
+     target="_blank" 
+     rel="noopener noreferrer">
+     Live Demo
+  </a>
+</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+
+  <!-- FORM -->
+  <div class="contact-form-container glass-card">
+    <h2>Get In Touch.</h2>
+
+    <form id="contactForm">
+      <div class="input-group">
+        <input type="text" id="name" placeholder="Your Name">
+        <small class="error"></small>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" placeholder="Your Email">
+        <small class="error"></small>
+      </div>
+
+      <div class="input-group">
+        <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+        <small class="error"></small>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+      <p class="success-message" id="successMessage"></p>
+    </form>
+  </div>
+
+  <!-- INFO CARDS -->
+<div class="contact-info">
+
+  <div class="info-card glass-card">
+    <i class="fas fa-envelope"></i>
+    <h3>Email</h3>
+    <p>odurowaadanquah@gmail.com</p>
+  </div>
+
+  <div class="info-card glass-card">
+    <i class="fab fa-github"></i>
+    <h3>GitHub</h3>
+    <p>github.com/odurowaa-jd</p>
+  </div>
+
+  <div class="info-card glass-card">
+    <i class="fas fa-location-dot"></i>
+    <h3>Location</h3>
+    <p>Accra, Ghana</p>
+  </div>
+
+</div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Jessica & Daniel Betechified Project Work.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
