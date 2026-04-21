@@ -23,6 +23,10 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+
+    <button id="themeToggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+</button>
   </nav>
 
   <!-- HERO -->
@@ -35,24 +39,102 @@
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="section">
-    <h2>About Us.</h2>
-    <p>We create modern, responsive websites with clean design and smooth interactions.</p>
+  <section class="reveal">
+    <section id="about" class="about-section">
+    <h2 class="section-title">About Us.</h2>
+
+  <div class="about-container">
+
+    <!-- IMAGE -->
+    <div class="about-image">
+      <img src="images\ZoB0fiPxSFr_XGRJFelh-KqrqQYMcT8jBxsqTYNjr1B0N2tU96ol7VKkilkeYY7MYZdPgcOM4Tihc4D_mF3qGuROqMaXgM6oLfyX7bHRQiuEkL6e408hydxRqn-wcEskFjJDKBH5gZxRROT4bO5COPp1zG0L7PYaZwjoOXEHYQy2277MjlcZwZoxVPQFhCuK.jpeg" alt="About us">
+    </div>
+
+    <!-- TEXT -->
+    <div class="about-content">
+      <h2>About This Project.</h2>
+      <p>
+        This project is a collaborative portfolio website designed and developed
+        to showcase modern frontend development skills. Built with a focus on
+        clean UI, responsiveness, and smooth user interactions, it reflects our
+        approach to creating elegant digital experiences.
+      </p>
+
+      <p>
+        Developed by <strong>Jessica Danquah</strong> and <strong>Daniel Olanrewaju</strong>,
+        this project highlights our ability to combine design and functionality.
+        From glassmorphism elements to interactive components, every section was
+        carefully crafted to deliver both visual appeal and usability.
+      </p>
+
+      <p>
+        Our goal was to build a portfolio that not only presents our work but also
+        demonstrates attention to detail, modern design trends, and responsive
+        development practices.
+      </p>
+    </div>
+
+  </div>
+
+</section>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
+  <section class="reveal">
+    <section id="skills" class="skills-section">
+
+  <h2 class="section-title">Skills.</h2>
+
+  <div class="skills-container">
+
+    <!-- HTML -->
+    <div class="skill-card glass-card">
+      <i class="fab fa-html5"></i>
+      <h3>HTML</h3>
+      <div class="progress-bar">
+        <div class="progress html" data-width="90">0%</div>
+      </div>
+    </div>
+
+    <!-- CSS -->
+    <div class="skill-card glass-card">
+      <i class="fab fa-css3-alt"></i>
+      <h3>CSS</h3>
+      <div class="progress-bar">
+        <div class="progress css" data-width="85">0%</div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <div class="skill-card glass-card">
+      <i class="fab fa-js"></i>
+      <h3>JavaScript</h3>
+      <div class="progress-bar">
+        <div class="progress js" data-width="75">0%</div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
   </section>
 
   <!-- PROJECTS -->
- <section id="projects" class="section">
-  <h2 class="section-title">Projects</h2>
+ <section class="reveal">
+  <section id="projects" class="section">
+  <h2 class="section-title">Projects.</h2>
+
+     <div class="filter-buttons">
+  <button data-filter="all">All</button>
+  <button data-filter="web">Web</button>
+</div>
+
 
   <div class="projects-container">
 
     <!-- Project 1 -->
-    <div class="project-card glass-card">
+    <div class="project-card web">
+      <div class="project-card glass-card">
       <div class="project-image">
       <img src="images\Screenshot (14).png" alt="Portfolio Project">
       <div class="overlay"></div>
@@ -81,13 +163,16 @@
 </div>
       </div>
     </div>
+    </div>
 
     <!-- Project 2 -->
-    <div class="project-card glass-card">
+    <div class="project-card web">
+      <div class="project-card glass-card">
       <div class="project-image">
       <img src="images\Screenshot (15).png" alt="Youtube.com clone">
       <div class="overlay"></div>
     </div>
+    
 
       <div class="project-content">
         <h3>Youtube.com Clone</h3>
@@ -111,16 +196,20 @@
 </div>
       </div>
     </div>
+    </div>
 
   </div>
 </section>
+ </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="contact-section">
+  <section class="reveal">
+    <section id="contact" class="contact-section" >
+    <h2 class="section-title">Stay In Touch.</h2>
 
   <!-- FORM -->
   <div class="contact-form-container glass-card">
-    <h2>Get In Touch.</h2>
+    <h2>Let Us Hear From You.</h2>
 
     <form id="contactForm">
       <div class="input-group">
@@ -166,11 +255,41 @@
 
 </div>
 </section>
+  </section>
 
   <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Jessica & Daniel Betechified Project Work.</p>
-  </footer>
+  <footer class="footer">
+
+  <div class="footer-content">
+
+    <!-- LEFT -->
+    <div class="footer-brand">
+      <h3>JESSICA|DANIEL</h3>
+    </div>
+
+    <!-- CENTER -->
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-socials">
+      <a href="https://github.com/odurowaa-jd/"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2026 JESSICA|DANIEL. All rights reserved.</p>
+  </div>
+
+</footer>
 
   <script src="script.js"></script>
 </body>
