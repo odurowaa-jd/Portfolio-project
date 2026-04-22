@@ -172,8 +172,8 @@ section:last-of-type::after {
 .dark-mode {
   --bg: #0f172a91;
   --text: #e5e7eb;
-  --nav-dark: #fbfcff;
-  --glass: rgba(255, 255, 255, 0.05);
+  --nav-dark: #ffffff;
+  --glass: rgba(219, 208, 208, 0.05);
 }
 
 .dark-mode body {
@@ -439,19 +439,6 @@ section:last-of-type::after {
   gap: 30px;
 }
 
-.project-card {
-  overflow: hidden;
-  border-radius: 18px;
-  transition: 0.4s ease;
-  cursor: pointer;
-}
-
-.project-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
 .project-content {
   padding: 20px;
 }
@@ -465,36 +452,6 @@ section:last-of-type::after {
   font-size: 0.95rem;
   margin-bottom: 15px;
   line-height: 1.5;
-}
-
-.project-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 20px 50px rgba(16, 44, 63, 0.25);
-}
-
-/* subtle glow border */
-.project-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 18px;
-  padding: 1px;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    var(--gold),
-    transparent
-  );
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.project-card:hover::before {
-  opacity: 1;
 }
 
 .project-content {
@@ -579,48 +536,57 @@ section:last-of-type::after {
 
 .project-card {
   position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  transition: 0.4s ease;
 }
 
 .project-image {
-  position: relative;
+  height: 250px;
   overflow: hidden;
 }
 
 .project-image img {
   width: 100%;
-  height: 220px;
+  height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: 0.4s ease;
 }
 
 /* overlay */
-.overlay {
+.project-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(16, 44, 63, 0.6);
-  color: white;
+
+  background: rgba(63, 82, 95, 0.507);
+  backdrop-filter: blur(6px);
 
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+
+  padding: 20px;
 
   opacity: 0;
   transition: 0.4s ease;
-  font-weight: 500;
-  pointer-events: none;
 }
 
-/* hover effects */
-.project-card:hover .project-image img {
-  transform: scale(1.1);
-}
-
-.project-card:hover .overlay {
+/* hover effect */
+.project-card:hover .project-overlay {
   opacity: 1;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
 }
 
 .project-btn:active {
   transform: scale(0.96);
+}
+
+.project-card.hide {
+  display: none 
 }
 
 
@@ -928,6 +894,8 @@ input:focus, textarea:focus {
     flex-direction: column;
   }
 }
+
+
 
 /*CONTACT SECTION RESPONSIVENESS*/
 @media (max-width: 768px) {

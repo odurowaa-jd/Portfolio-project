@@ -111,39 +111,35 @@ function revealOnScroll() {
 
 window.addEventListener("scroll", revealOnScroll);
 
-/DYNAMIC PROJECT FILTER/
-const buttons = document.querySelectorAll(".filter-buttons button");
-const cards = document.querySelectorAll(".project-card");
 
-buttons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    const filter = btn.getAttribute("data-filter");
 
-    cards.forEach(card => {
-      if (filter === "all" || card.classList.contains(filter)) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
+// DYNAMIC PROJECT FILTER
+document.addEventListener("DOMContentLoaded", () => {
+
+  const buttons = document.querySelectorAll(".filter-buttons button");
+  const cards = document.querySelectorAll(".project-card");
+
+  console.log("Buttons:", buttons.length);
+  console.log("Cards:", cards.length);
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+
+      const filter = button.getAttribute("data-filter");
+
+      // active state
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      cards.forEach(card => {
+        if (filter === "all" || card.classList.contains(filter)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+
     });
   });
-});
 
-buttons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    
-    // remove active from all
-    buttons.forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-
-    const filter = btn.getAttribute("data-filter");
-
-    cards.forEach(card => {
-      if (filter === "all" || card.classList.contains(filter)) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
-    });
-  });
 });
