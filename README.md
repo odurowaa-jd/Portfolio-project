@@ -1,25 +1,27 @@
-# UI-Focused Single Page Portfolio
+# UI-Focused Portfolio with Dark Mode 
 
-Created during my 12th week at **Betechified Africa**, this project is a refined, single-page evolution of my professional portfolio. It focuses on high-end UI design, unique color palettes, and seamless user interaction.
+Created during my 12th week at **Betechified Africa**, this project is a refined, single-page portfolio. It focuses on high-end UI design, unique color blends, and a fully functional **Dark Mode** toggle.
 
-##  Design & Evolution
-While my previous portfolio explored multi-page architecture, this 12-week milestone focuses on **design precision** and **user flow**:
-- **Unique Color Blending:** Moving away from standard templates to experiment with custom color harmonies and tones.
-- **Single-Page Fluidity:** A streamlined "scroll-through" experience designed to keep the user engaged from top to bottom.
-- **Refined Interactivity:** Polished hover effects and transitions that feel intentional and professional.
+##  Design & Technical Evolution
+While my previous work focused on layout, this 12-week milestone showcases my ability to handle **user preferences** and **dynamic styling**:
+
+- **Custom Dark Mode:** Integrated a JavaScript-powered dark/light mode toggle that updates the site's theme in real-time.
+- **Unique Color Blending:** Experimented with custom color harmonies that remain accessible and visually striking in both light and dark themes.
+- **Single-Page Fluidity:** A streamlined experience designed to keep the user engaged from top to bottom.
 
 ## ✨ Key Features
-- **Modern UI/UX:** A clean, minimal layout that prioritizes content and readability.
-- **JavaScript Functionality:** Includes robust form validation and interactive elements similar to my multi-page build.
-- **Responsive Mastery:** Optimized for all screen sizes with a focus on mobile-first design.
+- **Theme Switching:** A smooth transition between Dark and Light modes.
+- **JavaScript Logic:** Used JS to handle theme state and form validation.
+- **Modern UI/UX:** A clean, minimal layout with a focus on typography and professional color tones.
+- **Responsive Design:** Fully optimized for mobile, tablet, and desktop screens.
 
 ##  My Journey
 - **Timeline:** 12 weeks into my frontend development journey.
-- **Growth:** This project demonstrates my ability to not just "code a site," but to design an experience through better color choices and layout balance.
+- **Growth:** Adding Dark Mode demonstrates a deeper understanding of CSS variables and how JavaScript can be used to create a personalized user experience.
 
 ##  Technologies Used
-- HTML5 & CSS3 (Custom Layouts & Color Variables)
-- JavaScript (Interaction & Validation)
+- HTML5 & CSS3 (CSS Variables for Theming)
+- JavaScript (Theme Toggle & Form Validation)
 - Git & GitHub Pages
 
 ## 🔗 Live Demo
